@@ -4,13 +4,13 @@
 
 ### Strings
 
-```
+```go
     var myString string = 'Hello World'
     var myString string = `Hello World`
     myString string := 'Hello' + ' ' + 'World'
 ```
 
-```
+```go
      var myString string = 'Hello World'
      len(myString) -> will give number of bytes used by the string
 
@@ -21,7 +21,7 @@
 
 #### Types
 
-```
+```go
 - int, int8 int16, int32, uint, uint8, uint16, uint32
 
 - float32, float64
@@ -31,7 +31,7 @@
 
 #### Operations
 
-```
+```go
 # Divison will round down by default
 fmt.Println(3 / 2) -> 1
 
@@ -41,7 +41,7 @@ fmt.Println(float + int)
 
 ### Boolean
 
-```
+```go
     var myBoolean bool = true
 
     const myBoolean bool = false
@@ -49,7 +49,7 @@ fmt.Println(float + int)
 
 ## Functions
 
-```
+```go
     import (
         "errors"
         "fmt"
@@ -93,7 +93,7 @@ fmt.Println(float + int)
 
 ## Control Flow
 
-```
+```go
 if val == val || val != val && val == val {
  ...
 } else if (boolean) {
@@ -119,7 +119,7 @@ switch value {
 
 ## Arrays, Slice, Maps, Loops
 
-```
+```go
 import "fmt"
 
 package main
@@ -166,7 +166,7 @@ func main() {
 
 ## Structs
 
-```
+```go
 
 type gasEngine struct {
     mpg uint8
@@ -201,7 +201,7 @@ func main() {
 
 ## Pointers
 
-```
+```go
 func main() {
     var p *int32 = new (int32)
     var i int32
@@ -216,7 +216,7 @@ Allows us to run functions concurrently and wait for them to finish via a wait g
 
 Use a mutex to prevent multiple goroutines from modifying the same resource at a single time
 
-```
+```go
 import (
     "fmt",
     "time",
@@ -257,7 +257,7 @@ func dbCall(i int) {
 
 Channels are a way to send and receive blocks and data and are typically used with Goroutines.
 
-```
+```go
 package main
 
 import "fmt"
@@ -286,6 +286,7 @@ func main() {
 
 Define a generic parameter into a function or struct
 
+```go
 type gasEngine struct {
 gallons float32
 mpg float32
@@ -301,3 +302,5 @@ carMake string
 carModel string
 engine T
 }
+
+```
